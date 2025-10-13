@@ -630,7 +630,7 @@ Header Style
     width: 100%;
   }
   .header-area {
-    background-color: #f7f7f7;
+    background-color: rgb(0,32,96);
     padding: 0px 15px;
     height: 100px;
     box-shadow: none;
@@ -2573,4 +2573,24 @@ p { font-size: 16px; line-height: 1.7; margin-bottom: 14px; }
   .main-banner .header-text h1 { font-size: 32px; }
   .main-banner .header-text h5 { font-size: 16px; }
   .products-image img { height: 260px; }
+  
+  /* Center the three rectangles on mobile */
+  .main-banner .categories .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main-banner .categories .item {
+    margin: 10px 0 !important;
+    width: 90%;
+    max-width: 300px;
+  }
+  
+  .main-banner .categories .item:first-child,
+  .main-banner .categories .item:nth-child(2),
+  .main-banner .categories .item:nth-child(3) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 }
